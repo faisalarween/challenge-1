@@ -1,0 +1,440 @@
+:root {
+    --ff: 'Bai Jamjuree', sans-serif;
+    --fw-n: 400;
+    --fw-m: 600;
+
+    --fs-1: 3.2rem;
+    --fs-2: 3rem;
+    --fs-3: 2.4rem;
+    --fs-p-1: 1.7rem;
+    --fs-s: 2rem;
+
+    --primary-clr: hsl(171, 66%, 44%);
+    --secondary-clr: hsl(233, 100%, 69%);
+    --dark-blue-clr: hsl(210, 10%, 33%);
+    --light-blue-clr: hsl(189, 33%, 96%);
+
+    --spacer: 1.8rem;
+
+    /* for responsive devices @1440px*/
+
+    --r-fs-1: 4.9rem;
+    --r-fs-2: 3.8rem;
+    --r-fs-3: 3rem;
+    --r-fs-p-1: 2.5rem;
+    --r-fs-p-2: 2.2rem;
+    --r-fs-p-3: 2rem;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--ff);
+}
+
+body {
+    background: url(images/bg-header-mobile.png) no-repeat;
+    background-size: contain;
+}
+
+/* Heading */
+.heading {
+    margin: 13rem 3rem 18rem;
+
+}
+
+.logo {
+    padding-bottom: 6.2rem;
+    text-align: center;
+}
+
+.heading img {
+    width: 14.5rem;
+}
+
+h1 {
+    font-size: var(--fs-1);
+    padding-bottom: var(--spacer);
+    text-align: center;
+}
+
+p {
+    opacity: .4;
+    text-align: center;
+    font-size: var(--fs-p-1);
+    line-height: 2.7rem;
+    margin-bottom: 1.6rem;
+    padding: 0 1rem;
+}
+
+button {
+    margin: 4.3rem auto auto;
+    border-radius: 5rem;
+    padding: 1.7rem 6rem;
+    color: white;
+    font-family: var(--ff);
+    border: none;
+    box-shadow: .1rem .1rem .6rem var(--dark-blue-clr);
+    font-weight: var(--fw-m);
+    letter-spacing: .1rem;
+    font-size: 2.1rem;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.btn-left {
+    background-color: var(--primary-clr);
+}
+
+.btn-right {
+    background-color: var(--secondary-clr);
+    margin-top: 2.8rem;
+}
+
+/* End of Heading */
+
+/* Main */
+.main {
+    margin: 10rem 3rem 19rem;
+}
+
+.main-top {
+    margin: 7rem auto;
+}
+
+.main-top p {
+    padding: 0 2rem;
+}
+
+h2 {
+    font-size: var(--fs-2);
+    font-weight: var(--fw-m);
+    padding-bottom: var(--spacer);
+    text-align: center;
+}
+
+.main-middle img {
+    min-width: 33rem;
+    min-height: 26rem;
+    margin-bottom: 5.5rem;
+}
+
+h3 {
+    font-size: var(--fs-3);
+    font-weight: var(--fw-m);
+    padding-bottom: var(--spacer);
+}
+
+.left-side__card {
+    margin-bottom: 6rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* End of Main */
+
+/* Clipboard */
+
+.clipboard {
+    margin: 0 3rem;
+    padding: 0 1rem;
+}
+
+.clipboard img {
+    min-width: 35rem;
+    min-height: 24rem;
+    margin: 0 0 10rem;
+
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clipboard p {
+    font-size: var(--fs-p-1);
+    margin-bottom: 7rem;
+}
+
+/* End of Clipboard */
+
+/* Workflow */
+
+.workflow-top {
+    text-align: center;
+    margin-bottom: 9rem;
+}
+
+.workflow-top p {
+    font-size: var(--fs-p-1);
+}
+
+.workflow-cards {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 14rem;
+    gap: 6rem;
+}
+
+.workflow-cards p {
+    font-size: var(--fs-p-1);
+}
+
+.workflow-flex__card {
+    text-align: center;
+
+}
+
+.workflow-flex__card img {
+    padding-bottom: 4rem;
+    object-fit: contain;
+}
+
+.partnership-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.partnership-logos img {
+    min-width: 13rem;
+}
+
+/* End of Workflow */
+
+/* Apps */
+
+.apps {
+    padding: 0 1rem;
+    margin: 19rem 0 20rem;
+}
+
+/* End of Apps */
+
+/* Footer */
+
+footer {
+    background-color: var(--light-blue-clr);
+    width: 100%;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 9rem;
+    padding: 6rem;
+    gap: 4rem;
+}
+
+.ending-one .Faq-contact,
+.ending-one .privacy-press,
+.ending-one .install {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ending-one span {
+    padding-bottom: 4rem;
+}
+
+.ending-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-media-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+.social-media-logo img {
+    width: 2.8rem;
+}
+
+span {
+    font-size: var(--fs-s);
+    font-weight: var(--fw-m);
+    opacity: .5;
+}
+
+footer img {
+    width: 6.5rem;
+}
+
+footer .logo {
+    padding-bottom: 0;
+}
+
+.attribution {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* Responsive settings only for 1440px screens and above */
+
+@media screen and (min-width: 1440px) {
+    .heading {
+        margin: 13rem 29rem 18rem;
+    }
+
+    h1 {
+        font-size: var(--r-fs-1);
+    }
+
+    p {
+        font-size: var(--r-fs-p-1);
+        line-height: 4rem;
+    }
+
+    .btn-right {
+        margin-top: 4.3rem;
+        margin-left: 2rem;
+    }
+
+    .main-top {
+        margin: 7rem 22rem;
+    }
+
+    .main-middle {
+        position: relative;
+    }
+
+    .main-middle img {
+        position: absolute;
+        left: -5%;
+        transform: translateX(90%);
+        transform: translateY(60%);
+        margin-bottom: 9.5rem;
+    }
+
+    .middle-main__left-side {
+        width: 45rem;
+        position: absolute;
+        right: 12rem;
+        top: 8rem;
+
+    }
+
+    .left-side__card {
+        padding: 0;
+        text-align: start;
+        margin-bottom: 3rem;
+    }
+
+    .left-side__card p {
+        padding: 0;
+        text-align: start;
+        font-size: var(--r-fs-p-2);
+    }
+
+    .clipboard {
+        margin: 72rem 0 0;
+
+    }
+
+    .workflow-top p {
+        font-size: var(--r-fs-p-1);
+    }
+
+    .clipboard p {
+        font-size: var(--r-fs-p-1);
+        padding: 0 33rem;
+        margin-bottom: 10rem;
+    }
+
+    .workflow-cards {
+        flex-direction: row;
+        margin-bottom: 14rem;
+        gap: 1.5rem;
+        padding: 0 10rem;
+    }
+
+    .workflow-cards p {
+        font-size: var(--r-fs-p-2);
+    }
+
+    .workflow-flex__card {
+        width: 105rem;
+        margin-bottom: 0;
+    }
+
+    .workflow-flex__card img {
+        width: 5rem;
+        height: 8rem;
+    }
+
+    .partnership-logos {
+        flex-direction: row;
+        gap: 10rem;
+    }
+
+    .apps {
+        padding: 0 25rem;
+        margin: 12rem 0 14rem;
+    }
+
+    .footer-wrapper {
+        flex-direction: row;
+        min-height: 9rem;
+        padding: 6rem 6rem 2rem;
+        gap: 12rem;
+    }
+
+    .ending-one {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .ending-one .Faq-contact,
+    .ending-one .privacy-press {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ending-one .install {
+        padding-bottom: 3.5rem;
+    }
+
+    .ending-one span {
+        padding: 0 6rem 1.5rem 0;
+    }
+
+    footer img {
+        width: 5rem;
+    }
+
+    .attribution {
+        font-size: var(--r-fs-p-3);
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+}
